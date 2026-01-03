@@ -1,0 +1,163 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP", "Surf", "IDP"],
+    "soc_id": ["407", "424", "475", "557", "632"]
+  },
+  "alsps_hw_stk32600":{
+    "owner": "sns_alsps",
+    ".key_config":{
+      "owner": "sns_alsps",
+      "is_als_dri":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "is_ps_dri":{ "type": "int", "ver": "3",
+        "data": "0"
+      },
+      "als_lb_algo":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "ps_hw_cali":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "ps_ir_algo":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "ps_dual_power":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "ps_far_gesture":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "als_row_coe":{ "type": "int", "ver": "0",
+        "data": "250"
+      },
+      "als_ud_buf_len":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "als_timer_ms":{ "type": "int", "ver": "0",
+        "data": "100"
+      },
+      "ps_timer_ms":{ "type": "int", "ver": "0",
+        "data": "100"
+      },
+      "pwm_freq":{"type": "int", "ver": "0",
+        "data": "720"
+      },
+      "ir_ratio":{"type": "int", "ver": "0",
+        "data": "0"
+      },
+      "lux_offset":{"type": "int", "ver": "0",
+        "data": "0"
+      },
+      "lux_cut":{"type": "int", "ver": "0",
+        "data": "0"
+      },
+      "ps_near_check_num":{"type": "int", "ver": "0",
+        "data": "1"
+      },
+      "ps_far_check_num":{"type": "int", "ver": "0",
+        "data": "1"
+      },
+      "auto_gain_timer_ms":{"type": "int", "ver": "0",
+        "data": "35"
+      },
+      "algo_para_num":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "brl_thrd_num":{ "type": "int", "ver": "0",
+        "data": "0"
+      }
+    },
+    ".reg":{
+      "owner": "sns_alsps",
+      "reg0":{ "type": "int", "ver": "0",
+        "data": "0x0360"
+      },
+      "reg1":{ "type": "int", "ver": "0",
+        "data": "0x8170"
+      },
+      "reg2":{ "type": "int", "ver": "0",
+        "data": "0xdb00"
+      },
+      "reg3":{ "type": "int", "ver": "0",
+        "data": "0x0560"
+      }
+    },
+    ".dynamic_cali":{
+      "owner": "sns_alsps",
+      ".dt":{
+        "owner": "sns_alsps",
+        "anti_shake_delta":{ "type": "int", "ver": "0",
+          "data": "70"
+        },
+        "low_step":{ "type": "int", "ver": "0",
+          "data": "300"
+        },
+        "high_step":{ "type": "int", "ver": "0",
+          "data": "400"
+        },
+        "low_limit":{ "type": "int", "ver": "0",
+          "data": "600"
+        },
+        "high_limit":{ "type": "int", "ver": "0",
+          "data": "1050"
+        },
+        "dirty_low_step":{ "type": "int", "ver": "0",
+          "data": "300"
+        },
+        "dirty_high_step":{ "type": "int", "ver": "0",
+          "data": "400"
+        },
+        "ps_dirty_limit":{ "type": "int", "ver": "0",
+          "data": "1800"
+        },
+        "ps_ir_limit":{ "type": "int", "ver": "0",
+          "data": "2000"
+        },
+        "ps_adjust_min":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "ps_adjust_max":{ "type": "int", "ver": "0",
+          "data": "1850"
+        },
+        "sampling_count":{ "type": "int", "ver": "0",
+          "data": "5"
+        },
+        "step_max":{ "type": "int", "ver": "0",
+          "data": "400"
+        },
+        "step_min":{ "type": "int", "ver": "0",
+          "data": "100"
+        },
+        "step_div":{ "type": "int", "ver": "0",
+          "data": "2000"
+        }
+      },
+      ".dc":{
+        "owner": "sns_alsps",
+        "cal_offset_margin":{ "type": "int", "ver": "0",
+          "data": "3000"
+        },
+        "dynamic_cali_max":{ "type": "int", "ver": "0",
+          "data": "2000"
+        },
+        "cali_over_zore_cnt":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "cali_jitter_limit":{ "type": "int", "ver": "0",
+          "data": "20"
+        },
+        "offset_max":{ "type": "int", "ver": "0",
+          "data": "60000"
+        },
+        "force_cali_limit":{ "type": "int", "ver": "0",
+          "data": "2000"
+        },
+        "boot_cali_delta":{ "type": "int", "ver": "0",
+          "data": "50"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+    "module": "segdepth_hairmatting",
+    "comment":
+    [
+        "QCOM performanceMode(BALANCED , HIGH_PERFORMANCE , POWER_SAVER , SYSTEM_SETTINGS , SUSTAINED_HIGH_PERFORMANCE ,",
+        "BURST , LOW_POWER_SAVER , HIGH_POWER_SAVER , LOW_BALANCED)",
+
+        "QCOM runtime(CPU_FLOAT32, GPU_FLOAT32_16_HYBRID, GPU_FLOAT16, DSP_FIXED8_TF, AIP_FIXED8_TF)",
+
+        "MTK performanceMode(kLowPower , kFastSingleAnswer , kSustainedSpeed)",
+        "WinTFLite runtime(UNKNOWN)",
+        "WinTFLite performanceMode(UNKNOWN)",
+        "MTK runtime(FLOAT, UINT8)",
+
+        "ImageWidth/ImageHeight(576, 768)",
+        "ROIMode(inner, outer)"
+    ],
+    "product": "7675",
+    "VENDOR": "QCOM",
+    "BrandModels": "BrandA_oplus",
+    "SNPE_VERSION": "2.17.0.231124",
+    "param":
+    [
+        {
+            "product_name": "7675",
+            "SnpeRuntimeAPIVersion":"v2",
+            "SegMode": "DSP",
+            "DepthMode": "DSP",
+            "SegResizeOnCpu":true,
+            "DepthResizeOnCpu":true,
+            "SegPerformanceMode": "BALANCED",
+            "DepthPerformanceMode": "BALANCED",
+            "OutputMask_WH":"864,1152",
+            "SegModel_In_WHC":"432,576,3",
+            "SegModel_Out_WHC":"432,576,3",
+            "DepthModel_In_WHC":"432,576,3",
+            "DepthModel_Out_WHC":"432,576,3",
+            "DepthVersion" : 2.0,
+            "SegEnable": true,
+            "DepthEnable": true,
+            "MattingEnable": true,
+            "HairMattingVersion": "2",
+            "HairMattingRuntime": "DSP_FIXED8_TF",
+            "HairMattingPerformanceMode": "BALANCED",
+            "HairMattingImageWidth": 1152,
+            "HairMattingImageHeight": 1536,
+            "HairMattingInputDelta": 0.003921568859,
+            "HairMattingInputOffset": 0,
+            "HairMattingOutputDelta": 0.004443128128,
+            "HairMattingOutputOffset": 19,
+            "HairMattingROIMode": "inner",
+            "NeonPerformanceMode":0,
+            "BokehLutPerformanceMode":0
+        }
+    ]
+}
